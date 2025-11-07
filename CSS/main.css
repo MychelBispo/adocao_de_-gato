@@ -1,7 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
 *{
 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     
+}
+
+.card
+{
+    width: 420px;
+    background-color: #F6FEAA;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+    font-family: "Gruppo", sans-serif;
+    color: gainsboro;
+    font-size: 25px;
+}
+
+.card img
+{
+    width: 400px;
+    height: 300px;
+    
+
+    
+}
+
+#card-container
+{
+    background-color: #FCE694;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.card button
+{
+
+    width: 100%;
+    padding: 5px;
+    border-radius: 0 0 15px 15px;
+    font-family: "Gruppo", sans-serif;
+
 }
