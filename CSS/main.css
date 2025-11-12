@@ -1,17 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Nabla&display=swap');
 
-*{
+:root 
+{
+    /* Variáveis de cor*/
+    --cor-principal: #390099ff;
+    --cor-secundaria: #ff0054ff;
+    --cor-terciaria: #9e0059ff;
+    --destaque: #ff5400ff;
+    --destaque-claro: #ffbd00ff;
+    --preto: #172026;
+    --branco: #F2F2F2;
+     /* Variáveis de cor*/
+
+      /* Variáveis de fonte*/
+      --fonte-principal:  "Gruppo", sans-serif;
+      --fonte-gigante: 100px;
+      --fonte-media: 40px;
+      --fonte-chamativa: "Nabla", system-ui;
+      
+       /* Variáveis de fonte*/
+}
+
+
+* 
+{
 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 }
 
-.card
-{
-    width: 420px;
-    background-color: #F6FEAA;
+.card {
+    width: 360px;
+    background-color: var(--cor-secundaria);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -19,34 +42,112 @@
     margin: 10px;
     border-radius: 20px;
     font-family: "Gruppo", sans-serif;
-    color: gainsboro;
+    color: var(--branco);
     font-size: 25px;
+    box-shadow: var(--preto) 5px 5px;
 }
 
-.card img
-{
-    width: 400px;
-    height: 300px;
-    
+.card img {
+    width: 350px;
+    height: 350px;
 
-    
+
+
 }
+/*replicando banner com flex*/
 
-#card-container
+.banner2
 {
-    background-color: #FCE694;
     display: flex;
     justify-content: space-around;
-    
-    
+    align-items: center;
 }
 
-.card button
+.text
 {
+font-family: var(--fonte-chamativa);
+}
+
+
+.banner2 img
+{
+
+}
+
+.banner2 .texto-foco2
+{
+
+}
+
+.banner2 .texto-secundario2
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+/*replicando banner com flex*/
+
+#card-container {
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.card button {
 
     width: 100%;
     padding: 5px;
+    border: var(--cor-secundaria) 10px solid;
     border-radius: 0 0 15px 15px;
     font-family: "Gruppo", sans-serif;
+    font-size: 20px;
+
+}
+
+.card:hover
+{
+    transform: scale(10px);
+}
+
+.banner
+{
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    background-color: var(--destaque-claro);
+}
+
+.banner img
+{
+    grid-column: 2/6;
+    grid-row: 2/6;
+}
+
+.banner .texto-foco
+{
+    grid-column: 4/15;
+    grid-row: 3/8;
+    text-align: center;
+    font-family: var(--fonte-chamativa);
+    font-size: var(--fonte-gigante);
+}
+
+.banner .texto-secundario
+{
+    grid-column: 4/15;
+    grid-row: 5/6;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: var(--fonte-media);
 
 }
