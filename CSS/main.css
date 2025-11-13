@@ -4,6 +4,7 @@
 :root 
 {
     /* Variáveis de cor*/
+
     --cor-principal: #390099ff;
     --cor-secundaria: #ff0054ff;
     --cor-terciaria: #9e0059ff;
@@ -11,9 +12,11 @@
     --destaque-claro: #ffbd00ff;
     --preto: #172026;
     --branco: #F2F2F2;
+
      /* Variáveis de cor*/
 
       /* Variáveis de fonte*/
+
       --fonte-principal:  "Gruppo", sans-serif;
       --fonte-gigante: 100px;
       --fonte-media: 40px;
@@ -55,36 +58,6 @@
 
 }
 /*replicando banner com flex*/
-
-.banner2
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.text
-{
-font-family: var(--fonte-chamativa);
-}
-
-
-.banner2 img
-{
-
-}
-
-.banner2 .texto-foco2
-{
-
-}
-
-.banner2 .texto-secundario2
-{
-
-}
-
-
 
 
 
@@ -151,3 +124,34 @@ font-family: var(--fonte-chamativa);
     font-size: var(--fonte-media);
 
 }
+
+
+/*Tela do celular*/
+@media screen and (max-width: 430px)
+{
+
+    .barra-navegacao
+    {
+       background-color: var(--cor-principal) !important;
+    }
+
+    .banner
+    {
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+    }
+
+    .container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header
+    {
+        background-color: var(--cor-principal);
+    }
+    
+}
+/*Tela do celular*/
