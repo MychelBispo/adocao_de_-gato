@@ -94,16 +94,20 @@
 
 .banner
 {
+
     display: grid;
     grid-template-rows: repeat(12, 1fr);
     grid-template-columns: repeat(6, 1fr);
     background-color: var(--destaque-claro);
+
 }
 
 .banner img
 {
+
     grid-column: 2/6;
     grid-row: 2/6;
+    
 }
 
 .banner .texto-foco
@@ -122,9 +126,37 @@
     text-align: center;
     font-family: var(--fonte-principal);
     font-size: var(--fonte-media);
+}
+
+.logo-footer
+{
+
+    height: 50px;
+    
 
 }
 
+.container-footer
+{
+    margin: 50px 204px 50px 204px;
+}
+
+#layer1-footer
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer
+{
+    background-color: var(--destaque);
+    
+}
+
+.container-footer p a
+{
+    text-decoration: none;
+}
 
 /*Tela do celular*/
 @media screen and (max-width: 430px)
@@ -132,25 +164,33 @@
 
     .barra-navegacao
     {
+
        background-color: var(--cor-principal) !important;
+
     }
 
     .banner
     {
+
         display: flex;
         flex-direction: column;
         width: 430px;
+
     }
 
     .container
     {
+
         flex-direction: column;
         align-items: center;
+
     }
 
     header
     {
+
         background-color: var(--cor-principal);
+
     }
     
 }
